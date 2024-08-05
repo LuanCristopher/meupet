@@ -1,4 +1,3 @@
-
 .container {
     text-align: center;
     margin: 0 auto;
@@ -13,32 +12,21 @@
 }
 
 
-#meupet-home {
+#noticias {
     display: block;
     margin: 0 auto;
     width: 100%;
-    height: 300px;
+    height: 200px;
     border-radius: 70px;
 }
 
-#cachorro{
+#crocodilo{
     display: block;
     width: 300px;
-    height: 300px;
+    height: 200px;
     border-radius: 50px;
     margin-top: 100px;
    border: 5px solid white;
-}
-
-#gato{
-    display: block;
-    width: 300px;
-    height: 300px;
-    border-radius: 50px;
-    margin-top: 100px;
-   border: 5px solid white;
-   justify-content: right;
-   margin-left: 50px;
 }
 
 p{
@@ -47,8 +35,8 @@ p{
     text-align: left;
 }
 
-@media screen and (max-width: 700px){
-   #div-home{
-    flex-direction: column;
-   } 
+#data-hora{
+    text-align: right;
+    font-family: poppinsmedium;
+    justify-content: end;
 }

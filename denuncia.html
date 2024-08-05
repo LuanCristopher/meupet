@@ -7,6 +7,7 @@
     <link href="./styles/styles.css" rel="stylesheet">
     <link href="./styles/fonts.css" rel="stylesheet">
     <link href="./styles/media.css" rel="stylesheet">
+    <link href="./styles/denuncia/denuncia.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -24,8 +25,26 @@
             <a href="./denuncia.html" id="denuncia-botao"><li>Denunciar!</li></a>
             <a href="./consut.html"><li>Consultar Denuncias</li></a>
         </ul>
-
     </header>
-    
+    <main>
+        <aside>
+            <h2>Maus tratos é <span id="crime">CRIME</span></h2>
+
+            <h2>Denuncie já!</h2>
+
+                <p>Os maus tratos contra animais é um problema muito recorrente em nossa sociedade, não podemos deixar
+                    isso impune, faça uma denúncia anônima 
+            </p>
+
+            <button id="btn">
+                DENUNCIE
+            </button>
+        </aside>
+        <article> <!--Isso é uma Div semantica pra locais onde vão ter imagens-->
+            <img id="maus" src="./componentes/imagens/maustratos.jpg" alt="maustratos.jpg">
+
+        </article>
+    </main>
+    <script src="./script/script.js"></script>
 </body>
 </html>
