@@ -1,0 +1,152 @@
+body {
+    background-color: rgb(38, 34, 34);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+aside {
+    width: 50%;
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 20px;
+    font-family: poppinsmedium;
+}
+
+span {
+    color: rgb(231, 168, 206);
+}
+
+img {
+    width: 600px;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: rgb(231, 168, 206);
+    transition: 0.3s all;
+}
+
+#denuncia-botao {
+    border: 2px solid rgb(231, 18, 18);
+    padding: 3px;
+    border-radius: 15px;
+}
+
+#denuncia-botao:hover {
+    background-color: rgb(231, 18, 18);
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+}
+
+form [type="submit"] {
+    height: 50px;
+    width: 50%;
+    background-color: rgb(231, 168, 206);
+    color: white;
+    font-weight: bold;
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+/* Media queries */
+@media screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px; /* Ajusta a margem superior no mobile */
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 38px;
+    }
+
+    form {
+        width: 100%; /* Ajusta o form para ocupar 100% da largura disponível */
+        padding: 0 20px; 
+        box-sizing: border-box; /* Inclui padding e border na largura total */
+    }
+
+    form input, form [type="submit"] {
+        width: 100%; 
+        max-width: none;
+    }
+
+    img {
+        display: none;
+    }
+
+    ul {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    z-index: 2; /* Mantém o conteúdo acima do vídeo */
+}
+
+/* Estilize o formulário */
+#form-login {
+    width: 70%; /* Ajuste a largura conforme necessário */
+    height: 40px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-login input[type="email"],
+#form-login input[type="password"],
+#form-login input[type="submit"] {
+    width: 70%;
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+#form-login input[type="submit"] {
+    height: 50px;
+    width: 20%;
+    background-color: rgb(231, 168, 206);
+    color: white;
+    font-weight: bold;
+}
