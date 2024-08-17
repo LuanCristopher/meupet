@@ -5,12 +5,12 @@
     align-items: center;
     height: 100vh;
     position: relative;
-    z-index: 2; /* Mantém o conteúdo acima do vídeo */
+    z-index: 2; 
 }
 
-/* Estilize o formulário */
+
 #form-login {
-    width: 70%; /* Ajuste a largura conforme necessário */
+    width: 70%; 
     height: 40px;
     padding: 50px;
     display: flex;

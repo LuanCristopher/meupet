@@ -1,3 +1,12 @@
-document.getElementById('btn').addEventListener('click', () => {
-    alert('A DEPA permite o registro de Denúncias de crimes contra animais O registro de um boletim de ocorrência deve ser feito na unidade policial mais próxima.');
+document.getElementById('denunciaForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio do formulário
+
+    // Pega o texto da denúncia
+    const denunciaText = document.getElementById('denunciaText').value;
+
+    // Salva no localStorage
+    localStorage.setItem('denuncia', denunciaText);
+
+    // Redireciona para a página de consulta
+    window.location.href = './consut.html';
 });

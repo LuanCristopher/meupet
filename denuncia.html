@@ -35,10 +35,12 @@
                 <p>Os maus tratos contra animais é um problema muito recorrente em nossa sociedade, não podemos deixar
                     isso impune, faça uma denúncia anônima 
             </p>
-
-            <button id="btn">
-                DENUNCIE
-            </button>
+            <form id="denunciaForm">
+                <input type="text" placeholder="Informa seu Nome">
+                <input type="number" placeholder="Informa seu CEP">
+                <textarea id="denunciaText" placeholder="Digite sua denúncia aqui..." required></textarea>
+                <button type="submit">Enviar Denúncia</button>
+            </form>
         </aside>
         <article> <!--Isso é uma Div semantica pra locais onde vão ter imagens-->
             <img id="maus" src="./componentes/imagens/maustratos.jpg" alt="maustratos.jpg">
