@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+    <link href="./styles/fonts.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+    <link href="./styles/denuncia/denuncia.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+
+        <div id="title">
+            <h1><span>Adoção</span></h1>
+            <h1>Facilitada</h1>
+        </div>
+
+        <ul>
+            <a href="./index.html"><li>Cadastre-se</li></a>
+            <a href="./login.html"><li>Login</li></a>
+            <a href="./home.html"><li>Home</li></a>
+            <a href="./noticias.html"><li>Útimas Noticias</li></a>
+            <a href="./denuncia.html" id="denuncia-botao"><li>Denunciar!</li></a>
+            <a href="./consut.html"><li>Consultar Denuncias</li></a>
+        </ul>
+    </header>
+    <main>
+        <aside>
+            <h2>Maus tratos é <span id="crime">CRIME</span></h2>
+
+            <h2>Denuncie já!</h2>
+
+                <p>Os maus tratos contra animais é um problema muito recorrente em nossa sociedade, não podemos deixar
+                    isso impune, faça uma denúncia anônima 
+            </p>
+            <form id="denunciaForm">
+                <input type="text" placeholder="Informe seu Nome">
+                <input type="text" placeholder="Informe seu CEP">
+                <textarea id="denunciaText" placeholder="Digite sua denúncia aqui..." required></textarea>
+                <button type="submit">Enviar Denúncia</button>
+            </form>
+            
+            <script>
+            document.getElementById('denunciaForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+            
+                const denuncia = document.getElementById('denunciaText').value;
+            
+                fetch('/api/denuncia', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ denuncia })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    window.location.href = './consult.html';
+                });
+            });
+            </script>
+            
+        </aside>
+        <article> <!--Isso é uma Div semantica pra locais onde vão ter imagens-->
+            <img id="maus" src="./componentes/imagens/maustratos.jpg" alt="maustratos.jpg">
+
+        </article>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
